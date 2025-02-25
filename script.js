@@ -1,4 +1,5 @@
 
+/*
 // ejercicio 1
 let nombre = "Santiago calderon";
 let edad = 20;
@@ -8,7 +9,7 @@ console.log("Hola, mi nombre es " + nombre + ", tengo " + edad + " años y vivo 
 
 // ejercicio 2
 /*crea una variable llamada precio y asignale un valor deciamal. luego crea otra variable llmada cantidad y asignale un 
-valor entero. Muestra el tipo de variable en la consola */
+valor entero. Muestra el tipo de variable en la consola 
 
 
 let precio = 2.25;
@@ -24,7 +25,7 @@ document.write(typeof cantidad);
 // ACTIVIDAD EN CLASE 
 
 /* ejercicio 1: Una tienda ofrece un 25% de descuento por cada compra. Un cliente desea
-saber cuánto deberá pagar por su compra. */
+saber cuánto deberá pagar por su compra. 
 
 let vcompra= 2000;
 let descuento = 0.25;
@@ -37,7 +38,7 @@ document.write("<br/>");
 
 /*ejercicio 2: Suponga que un individuo desea invertir su capital en un banco y desea saber
 cuánto dinero ganara después de un mes si el banco paga a razón de 2%
-mensual.*/
+mensual.
 
 let capital = 1000;
 let interes = 0.02;
@@ -52,7 +53,7 @@ document.write("<br/>");
 Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
 a. 55% del promedio de sus tres calificaciones parciales.
 b. 30% de la calificación del examen final.
-c. 15% de la calificación de un trabajo final. */
+c. 15% de la calificación de un trabajo final. 
 
 let parcial1 = 4.5;
 let parcial2 = 3.5;
@@ -69,7 +70,7 @@ document.write("<br/>La calificacion final es: " + calificacion);
 document.write("<br/>");
 
 /*ejerccio 4: El dueño de una tienda compra un artículo a un precio determinado. Obtener el
-precio en que lo debe vender para obtener una ganancia del 30%. */
+precio en que lo debe vender para obtener una ganancia del 30%. 
 
 let precioCompra = 1000;
 let ganancia4 = 0.30;
@@ -81,7 +82,7 @@ document.write("<br/>El precio de venta es: " + precioVenta);
 document.write("<br/>");
 
 /*ejercicio 5: Un taxi cobra por una carrera 15 mil pesos por kilómetro recorrido y 2 mil por
-minuto. Determine el monto a pagar por una carrera. */
+minuto. Determine el monto a pagar por una carrera. 
 
 let km = 5;
 let min = 10;
@@ -95,7 +96,7 @@ document.write("<br/>El total a pagar es: " + total5);
 document.write("<br/>");
 
 /*ejercicio 6: Realizara un programa en el cual se van a leer tres números y determinar el
-cuadrado de cada uno de ellos. */
+cuadrado de cada uno de ellos. 
 
 let num1 = 2;
 let num2 = 3;
@@ -121,7 +122,7 @@ presupuesto anual del hospital se reparte conforme a la sig. tabla:
         Traumatología 30%
         Pediatría 30%
 Obtener la cantidad de dinero que recibirá cada área, para cualquier monto
-presupuestal. */
+presupuestal. 
 
 let presupuesto = 1000000;
 let ginecologia = presupuesto * 0.40;
@@ -142,7 +143,7 @@ document.write("<br/>");
 
 /*ejercicio 9: Tres personas deciden invertir su dinero para fundar una empresa. Cada una de
 ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte
-con respecto a la cantidad total invertida. */
+con respecto a la cantidad total invertida. 
 
 let inversion1 = 1000;
 let inversion2 = 2000;
@@ -163,7 +164,7 @@ document.write("<br/>El porcentaje de la inversion 3 es: " + porcentaje3 + "%");
 document.write("<br/>");
 
 /*ejercicio 10: Realizar una calculadora con las operaciones básicas suma, división,
-multiplicación y división. */
+multiplicación y división. 
 
 let calculadora_num1= 10;
 let calculadora_num2= 5;
@@ -183,6 +184,86 @@ document.write("<br/>La suma de: " + calculadora_num1 + " y " + calculadora_num2
 document.write("<br/>La resta de: " + calculadora_num1 + " y " + calculadora_num2 + " es "+ resta);
 document.write("<br/>La multiplicacion de: "+ calculadora_num1 + " y " + calculadora_num2 + " es " + multiplicacion);
 document.write("<br/>La division de: "+ calculadora_num1 + " y " + calculadora_num2 + " es " + division);
+*/
+
+/*ejemplo 1. declare dos variables una que sea el nombre y otra que sea la edad */
+
+/*let nombre = prompt("Ingrese su nombre");
+let edad= parseInt(prompt("ingrese su edad"));
+
+if(edad>=18){
+        alert("mi perrito "+ nombre + " ya eres legal");
+}else{
+        alert("ve a tomar tetero "+ nombre + " porque eres menor de edad");
+}
 
 
+/*el usuario diigite nombre y edad con la siguiente estructura de verificacio 
+1-18= joven
+19-40= adulto
+41-60= adulto mayor
+61-adelante= anciano 
 
+
+let nombre = prompt("Ingrese su nombre");
+let edad= parseInt(prompt("ingrese su edad"));
+
+if(edad<=18){
+        alert("mi perrito "+ nombre + " eres un joven");
+
+}else if(edad>=19 && edad<=40){
+        alert("mi perrito "+ nombre + " eres un adulto");
+
+}else if(edad>=41 && edad<=60){
+        alert("mi perrito "+ nombre + " eres un adulto mayor");
+
+}else{
+        alert("mi perrito "+ nombre + " eres un anciano");
+}
+ */
+
+//ciclo while 
+
+/*declarar una variable numerica que muestre la cuenta regresiva a llegar a cero 
+
+
+let numero=prompt("ingrese su numero para hacer la cuenta regresiva");
+
+while(numero>=0){
+        document.write(numero + "<br>");
+        numero--;
+}
+*/
+
+//do while
+
+//imprimir 5 edades diferentes y determinar si son mayores de edad o no
+
+        /*let persona=0
+
+        do{
+                let nombre=prompt("ingrese su nombre");
+                let edad=parseInt(prompt("ingrese su edad"));
+                if(edad>=18){
+                        alert(nombre +" eres mayor de edad");
+                }else{
+                        alert(nombre +" eres menor de edad");
+                }
+                persona++;
+        }while(persona<5)
+
+                alert ("se registraron " + persona + " personas");
+                alert("fin del programa");
+
+                */
+
+                //ciclo for
+                
+                
+                let numMultiplicar=parseInt(prompt("ingrese el numero a multiplicar"));
+
+                for(let i=0; i<=10; i++){
+                        let resultado= numMultiplicar * i;
+
+                       document.write(numMultiplicar + " x " + i + " = " + resultado + "<br>" );
+                }
