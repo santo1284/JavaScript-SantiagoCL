@@ -260,10 +260,283 @@ while(numero>=0){
                 //ciclo for
                 
                 
-                let numMultiplicar=parseInt(prompt("ingrese el numero a multiplicar"));
+                /*let numMultiplicar=parseInt(prompt("ingrese el numero a multiplicar"));
 
                 for(let i=0; i<=10; i++){
                         let resultado= numMultiplicar * i;
 
                        document.write(numMultiplicar + " x " + i + " = " + resultado + "<br>" );
                 }
+                       */
+
+
+                // Switch case
+
+                //ejemplo 1. realiza un programa que determine que dia de la semana corresponde hoy, utilizando la funcion prompt
+
+               /* let dia=parseInt(prompt("ingrese el numero del dia"));
+
+                switch(dia){
+                        case 1: alert("hoy es lunes");
+                        break;
+                        case 2: alert("hoy es martes");
+                        break;
+                        case 3: alert("hoy es miercoles");
+                        break;
+                        case 4: alert("hoy es jueves");
+                        break;
+                        case 5: alert("hoy es viernes");
+                        break;
+                        case 6: alert("hoy es sabado");
+                        break;
+                        case 7: alert("hoy es domingo");
+                        break;
+                        default: alert("el numero digitado no crorresponde a ningun dia de la semana");
+
+                }
+
+                */
+
+                //ejemplo 2
+                /*
+
+                const dia = new Date().getDay()
+
+                        switch (dia) {
+                        case 0:
+                        case 6:
+                        console.log("¡Hoy es fin de semana! 🥳")
+                        break
+                        case 1:
+                        case 2:
+                        case 3:
+                        case 4:
+                        console.log("¡Nooo, a trabajar! 😢")
+                        break
+                        case 5:
+                        console.log("¡Hoy es viernes! 🤓")
+                        break
+                        }
+
+                        */
+
+                        // ejemplo 3. rangos
+                        /*
+
+                        let edad = parseInt(prompt("ingrese su edad"));
+                        switch(true) {
+                                case (edad >= 18 && edad < 25):
+                                console.log("Eres mayor de edad y eres joven");
+                                break;
+                                case (edad >= 25 && edad < 40):
+                                console.log("Eres mayor de edad y estás en plena madurez");
+                                break;
+                                case (edad >= 40):
+                                console.log("Eres mayor de edad y estás en la mejor edad");
+                                break;
+                                default:
+                                console.log("Eres menor de edad");
+                        }
+                */
+
+
+                
+                //actividad en clase
+
+                //1. Imprimir por consola un mensaje siel usuario y contraseña coinciden con unos establecidos 
+
+                let gmail="santiago@gmail.com";
+                let passwor="1234";
+
+                let usuario=prompt("ingrese su correo electronico");
+                let contraseña=prompt("ingrese su contraseña");
+
+                if(usuario===gmail && passwor===contraseña){
+                        document.write("bienvenido a su cuenta <br/>");
+                }else{
+                        document.write("usuario o contraseña incorrecta <br>");
+                }
+
+                //2. verificar si un numero es positivo, negativo o cero e imprimir un mensaje 
+
+
+                let numero=parseInt(prompt("ingrese un numero para saber si es negativo, positivo o cero"));
+
+                if(numero>0){
+                        document.write("el numero es positivo <br>");
+                }else if(numero<0){
+                        document.write("el numero es negativo <br>");
+                }else if(numero===0){
+                        document.write("el numero es cero <br>" );
+                }
+
+                //3. verificar si una persona puede votar o no (mayor o igial a 18) e indica cuantos años le falta
+
+                let edad=parseInt(prompt("ingrese su edad para saber si puedes votar"));
+
+                if(edad>=18){
+                        document.write("puedes votar <br>");
+                }else{
+                        let falta=18-edad;
+                        document.write("te faltan " + falta +" años <br>")
+                }
+
+                //4. use el operador ternario para asignar el valor "adulto" o "menor " a una variable dependiendo la edad
+
+                let edad2=parseInt(prompt("ingrese su edad para saber si eres mayor de edad o menor de edad"));
+
+                document.write(edad2>=18 ? "eres mayor de edad" : "eres menor de edad");
+
+                document.write("<br>")
+
+
+                document.write(" <br >comienzo ejercicios pares actividad en clase <br>");
+
+                /*2.Dada las 3 calificaciones que el estudiante obtuvo en un curso
+                        a) Determinar su promedio
+                        b) Indicar si el estudiante aprobó o no aprobó el curso.
+                        Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6*/
+
+                let nota1 = parseInt(prompt("ingrese su primer nota"));
+                let nota2 = parseInt(prompt("ingrese su segunda nota"));
+                let nota3 = parseInt(prompt("ingrese su tercer nota"));
+
+                let promedio = (nota1+nota2+nota3)/3
+
+                document.write(promedio>=6 ? "Felicidades aprobo el curso" : "Reprobaste el curso <br>");
+
+                /*4. Leer dos números y los imprima en forma ascendente. */
+
+                let num1 = parseInt(prompt("ingrese el primer digito para organizar"));
+                let num2 = parseInt(prompt("ingrese el segundo numero a organizar"));
+
+                document.write(num1>num2 ? num1+ "<br>" + num2 : num2 + "<br>" + num1 + "<br>")
+
+                /*6. Dado un numero entre 1 y 7 escriba su correspondiente día de la semana
+                        así:
+                        DIA1 = LUNES
+                        DIA2 = MARTES
+                        DIA3 = MIECOLES
+                        DIA4 = JUEVES
+                        DIA5 = VIERNES
+                        DIA6 = SABADO
+                        DIA7 = DOMINGO
+                        SI se escribe otro número diferentes debe salir el mensaje: ESCRIBIO UN
+                        NUMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7 */
+
+                        let dia_semana= parseInt(prompt("ingrese un numero para saber el dia de la semana"));
+
+                        switch(dia_semana){
+                                case 1:
+                                document.write("lunes <br>")
+
+                                break;
+                                case 2:
+                                document.write("marte  <br>")
+        
+                                break;
+                                case 3:
+                                document.write("miercoles  <br>")
+
+                                break;
+                                case 4:
+                                document.write("jueves  <br>")
+
+                                break;
+                                case 5:
+                                document.write("viernes  <br>")
+
+                                break;
+                                case 6:
+                                document.write("sabado  <br>")
+        
+                                break;
+                                case 7:
+                                document.write("domingo  <br>")
+                
+                                break;
+                                
+                                default: document.write("ESCRIBIO UN NUMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7  <br>")
+
+                        }
+
+
+                        /*8. Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig.
+                                manera:
+                                a) Si trabaja 40 horas o menos se le paga $16000 por hora
+                                b) Si trabaja más de 40 horas se le paga $20000 por hora */
+
+                                let horas= parseInt(prompt("cuantas horas trabajo en la semana"));
+
+                                if(horas<40){
+                                        document.write("40 horas o menos se le paga $16000 por hora <br>");
+                                        let trabajo = 16000* horas;
+                                        document.write("usted gano esta semana " + trabajo + " trabajando un total de " + horas + "<br>");
+                                }else{
+                                        document.write("más de 40 horas se le paga $20000 por hora <br>");
+                                        let trabajo = 16000* horas;
+                                        document.write("usted gano esta semana " + trabajo + " trabajando un total de " + horas + "<br>");
+                                }
+
+                        /*10.Hacer un programa que calcule el total a pagar por la compra de camisas. Si
+                                se compran tres camisas o mas se aplica un descuento del 20% sobre el total
+                                de la compra y si son menos de tres camisas un descuento del 10%. */
+
+                                let num_camisas=parseInt(prompt("cuantas camisas compro"))
+
+                                switch(num_camisas){
+                                        case 1:
+                                        case 2:
+                                                let precio1= parseInt(prompt("cual es el precio de la primer camisa"));
+                                                let precio2= parseInt(prompt("cual es el precio de la segunda camisa de no haber comprado poner 0"));
+                                               
+                                                let valor = precio1+precio2
+                                                let descuento= (valor*10/100)
+                                                let pagar = valor-descuento
+
+                                                document.write("su compra fue de "+ valor +
+                                                         " tiene un descuento de " + descuento +
+                                                          " su total a pagar es de "+ pagar + "<br>")
+                                        break;
+                                        case 3: 
+                                                let precio3= parseInt(prompt("cual es el precio de la primer camisa"));
+                                                let precio4= parseInt(prompt("cual es el precio de la segunda camisa"));
+                                                let precio5= parseInt(prompt("cual es el precio de la tercer camisa"));
+
+                                                let valor2 = precio3+precio4+precio5
+                                                let descuento2= (valor2*20/100)
+                                                let pagar2 = valor2-descuento2
+
+                                                document.write("su compra fue de "+ valor2 +
+                                                         " tiene un descuento de " + descuento2 +
+                                                          " su total a pagar es de "+ pagar2 + "<br>")
+                                }
+
+                                /*12.Realizar una calculadora con las operaciones básicas suma, división,
+                                        multiplicación y división. */
+
+                                        let operacion= prompt("que operacion quiere realizar \n suma \n resta \n multuplicacion \n division")
+
+                                        switch(operacion){
+                                                case "suma":
+
+                                                        break;
+                                                case "resta":
+
+                                                break;
+                                                case "multiplicacion":
+
+                                                break;
+                                                case "division":
+                                                        
+                                                break;
+
+                                        }
+
+
+
+
+
+
+
+
