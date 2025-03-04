@@ -515,23 +515,132 @@ while(numero>=0){
                                 /*12.Realizar una calculadora con las operaciones básicas suma, división,
                                         multiplicación y división. */
 
-                                        let operacion= prompt("que operacion quiere realizar \n suma \n resta \n multuplicacion \n division")
+                                        let operacion= prompt("ingrese el numero de la operacion que quiere realizar \n1.  suma \n 2. resta \n3. multuplicacion \n4. division")
 
                                         switch(operacion){
                                                 case "suma":
+                                                        let num1 = parseInt(prompt("ingrese el primer numero que desea sumar"));
+                                                        let num2 = parseInt(prompt("ingrese el segundo numero que desea sumar"));
+                                                        let suma= num1+num2;
 
-                                                        break;
+                                                        document.write("la suma de los numeros "+ num1 + " y " + num2 + " es " +suma + "<br>");
+
+                                                        break
                                                 case "resta":
+                                                        let res1 = parseInt(prompt("ingrese el primer numero que desea restar"));
+                                                        let res2 = parseInt(prompt("ingrese el segundo numero que desea restar"));
+                                                        let resta= res1-res2;
 
-                                                break;
+                                                        document.write("la resta de los numeros "+ res1 + " y " + res2 + " es " + resta + "<br>");
+
+                                                break
                                                 case "multiplicacion":
+                                                        let mul1 = parseInt(prompt("ingrese el primer numero que desea restar"));
+                                                        let mul2 = parseInt(prompt("ingrese el segundo numero que desea restar"));
+                                                        let multiplicacion= mul1*mul2;
 
-                                                break;
+                                                        document.write("la multipliacion de los numeros "+ mul1 + " y " + mul2 + " es " + multiplicacion + "<br>");
+
+
+                                                break
                                                 case "division":
+                                                        let div1 = parseInt(prompt("ingrese el primer numero que desea dividir"));
+                                                        let div2 = parseInt(prompt("ingrese el segundo numero que desea dividir"));
+                                                        let division= div1/div2;
+
+                                                        document.write("la division de los numeros "+ div1 + " y " + div2 + " es " + division + "<br>");
+
                                                         
-                                                break;
+                                                break
+
+                                                default: document.write("no se dijito alguana de las operaciones <br>");
+                                                break
 
                                         }
+
+
+                                        /*14.Crea un programa que calcule el índice de masa corporal (IMC) de una
+                                                persona y muestre un mensaje indicando si la persona está bajo peso, peso
+                                                normal, sobrepeso u obesidad.*/
+
+                                                let peso= parseFloat(prompt("ingrese su peso en kilogramos"));
+                                                let altura= parseFloat(prompt("ingrese su altura en metros"));
+                                                let imc= peso/(altura*altura);
+                                                
+                                                if (imc<18.5){
+                                                        document.write("estas bajo de peso <br>");
+                                                }else if(imc>18.5 && imc<24.9){
+                                                        document.write("estas en un peso normal <br>");
+                                                }else if (imc>25 && imc<29.9){
+                                                        document.write("estas en sobrepeso <br>")
+                                                }else{
+                                                        document.write("ya estas gordo chamo pero ya tipo ballena <br>")
+                                                }
+
+
+                                        /*16.Desarrolla un programa que solicite la nota final de la materia de algoritmos
+                                        y generar el criterio de la nota, de acuerdo a la siguiente tabla. 
+                                                desempeño superior------------->4.5-5.0
+                                                desempeño alto -------------->3.9-4.4
+                                                desempeño basico -------------> 3.4-3.8
+                                                desempeño bajo ------------------> 1.0 - 3.3
+                                        
+                                        */
+                                        
+                                            let nota_final = parseFloat(prompt("ingrese su nota final"));
+                                            
+                                            if(nota_final>=1.0 && nota_final<=3.3){
+                                                document.write("desempeño bajo <br>");
+
+                                            }else if(nota_final>=3.4 && nota_final<=3.8){
+                                                document.write("desempeño basico <br>");
+
+                                            }else if(nota_final>=3.9 && nota_final<=4.4){
+                                                document.write("desempeño alto <br>" );
+
+                                            }else if(nota_final>=4.5 && nota_final<=5){
+                                                document.write("desempeño superior <br>");
+                                            }else{
+                                                document.write("nota final fuera de los parametros establecidos <br>");
+                                            }
+
+
+                                        /*18.Escribe un programa que imprima "Es un número menor que 10" si el número
+                                        ingresado es menor que 10, "Es un número entre 10 y 20" si el número
+                                        ingresado está entre 10 y 20, y "Es un número mayor que 20" si el número
+                                        ingresado es mayor que 20. */
+
+                                        let valor = parseInt(prompt("ingrese un numero"));
+
+                                        document.write(valor<=10 ? "es un numero menor que 10" :
+                                                 valor>=10&&valor<=20? "es un numero entre 10 y 20": "es un numero mayor que 20");
+
+
+                                        /* 20.Escribe un programa que solicite al usuario su género y su edad. Si el usuario
+                                        es de género masculino y tiene más de 18 años, muestra un mensaje que
+                                        indique que es elegible para el servicio militar; en caso contrario, muestra un
+                                        mensaje que diga que no es elegible.*/
+
+                                        let genero = prompt("ingrese con el genero que se identifica");
+                                        let edad_ser = prompt("ingrese su edad"); 
+
+                                        if(genero==="masculino" && edad_ser>=18){
+                                                document.write("<br>puedes prestar servivio militar");
+                                        }else{
+                                                document.write("<br> NO puedes prestar servivio militar");
+                                        }
+
+                                       
+
+                                        
+                                        
+
+
+
+
+                                      
+                                        
+
 
 
 
