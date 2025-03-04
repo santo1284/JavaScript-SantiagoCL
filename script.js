@@ -515,7 +515,7 @@ while(numero>=0){
                                 /*12.Realizar una calculadora con las operaciones básicas suma, división,
                                         multiplicación y división. */
 
-                                        let operacion= prompt("ingrese el numero de la operacion que quiere realizar \n1.  suma \n 2. resta \n3. multuplicacion \n4. division")
+                                        let operacion= prompt("ingrese el nombre de la operacion que quiere realizar \n1.  suma \n 2. resta \n3. multuplicacion \n4. division")
 
                                         switch(operacion){
                                                 case "suma":
@@ -629,6 +629,9 @@ while(numero>=0){
                                         }else{
                                                 document.write("<br> NO puedes prestar servivio militar");
                                         }
+
+
+                                        
 
                                        
 
