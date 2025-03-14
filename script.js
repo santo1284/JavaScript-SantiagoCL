@@ -345,7 +345,7 @@ while(numero>=0){
 
                 //1. Imprimir por consola un mensaje siel usuario y contraseña coinciden con unos establecidos 
 
-                let gmail="santiago@gmail.com";
+               /* let gmail="santiago@gmail.com";
                 let passwor="1234";
 
                 let usuario=prompt("ingrese su correo electronico");
@@ -355,10 +355,10 @@ while(numero>=0){
                         document.write("bienvenido a su cuenta <br/>");
                 }else{
                         document.write("usuario o contraseña incorrecta <br>");
-                }
+                }*/
 
                 //2. verificar si un numero es positivo, negativo o cero e imprimir un mensaje 
-
+/*
 
                 let numero=parseInt(prompt("ingrese un numero para saber si es negativo, positivo o cero"));
 
@@ -369,9 +369,9 @@ while(numero>=0){
                 }else if(numero===0){
                         document.write("el numero es cero <br>" );
                 }
-
+*/
                 //3. verificar si una persona puede votar o no (mayor o igial a 18) e indica cuantos años le falta
-
+/*
                 let edad=parseInt(prompt("ingrese su edad para saber si puedes votar"));
 
                 if(edad>=18){
@@ -380,9 +380,9 @@ while(numero>=0){
                         let falta=18-edad;
                         document.write("te faltan " + falta +" años <br>")
                 }
-
+*/
                 //4. use el operador ternario para asignar el valor "adulto" o "menor " a una variable dependiendo la edad
-
+/*
                 let edad2=parseInt(prompt("ingrese su edad para saber si eres mayor de edad o menor de edad"));
 
                 document.write(edad2>=18 ? "eres mayor de edad" : "eres menor de edad");
@@ -391,12 +391,12 @@ while(numero>=0){
 
 
                 document.write(" <br >comienzo ejercicios pares actividad en clase <br>");
-
+*/
                 /*2.Dada las 3 calificaciones que el estudiante obtuvo en un curso
                         a) Determinar su promedio
                         b) Indicar si el estudiante aprobó o no aprobó el curso.
                         Las notas deben ser de 1 a 10 y aprueba con un promedio mayor de 6*/
-
+/*
                 let nota1 = parseInt(prompt("ingrese su primer nota"));
                 let nota2 = parseInt(prompt("ingrese su segunda nota"));
                 let nota3 = parseInt(prompt("ingrese su tercer nota"));
@@ -404,14 +404,14 @@ while(numero>=0){
                 let promedio = (nota1+nota2+nota3)/3
 
                 document.write(promedio>=6 ? "Felicidades aprobo el curso" : "Reprobaste el curso <br>");
-
+*/
                 /*4. Leer dos números y los imprima en forma ascendente. */
-
+/*
                 let num1 = parseInt(prompt("ingrese el primer digito para organizar"));
                 let num2 = parseInt(prompt("ingrese el segundo numero a organizar"));
 
                 document.write(num1>num2 ? num1+ "<br>" + num2 : num2 + "<br>" + num1 + "<br>")
-
+*/
                 /*6. Dado un numero entre 1 y 7 escriba su correspondiente día de la semana
                         así:
                         DIA1 = LUNES
@@ -423,7 +423,7 @@ while(numero>=0){
                         DIA7 = DOMINGO
                         SI se escribe otro número diferentes debe salir el mensaje: ESCRIBIO UN
                         NUMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7 */
-
+/*
                         let dia_semana= parseInt(prompt("ingrese un numero para saber el dia de la semana"));
 
                         switch(dia_semana){
@@ -459,13 +459,13 @@ while(numero>=0){
                                 default: document.write("ESCRIBIO UN NUMERO FUERA DEL RANGO. ESCRIBA UN NÚMERO ENTRE 1 Y 7  <br>")
 
                         }
-
+*/
 
                         /*8. Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig.
                                 manera:
                                 a) Si trabaja 40 horas o menos se le paga $16000 por hora
                                 b) Si trabaja más de 40 horas se le paga $20000 por hora */
-
+/*
                                 let horas= parseInt(prompt("cuantas horas trabajo en la semana"));
 
                                 if(horas<40){
@@ -477,11 +477,11 @@ while(numero>=0){
                                         let trabajo = 16000* horas;
                                         document.write("usted gano esta semana " + trabajo + " trabajando un total de " + horas + "<br>");
                                 }
-
+*/
                         /*10.Hacer un programa que calcule el total a pagar por la compra de camisas. Si
                                 se compran tres camisas o mas se aplica un descuento del 20% sobre el total
                                 de la compra y si son menos de tres camisas un descuento del 10%. */
-
+/*
                                 let num_camisas=parseInt(prompt("cuantas camisas compro"))
 
                                 switch(num_camisas){
@@ -511,10 +511,10 @@ while(numero>=0){
                                                          " tiene un descuento de " + descuento2 +
                                                           " su total a pagar es de "+ pagar2 + "<br>")
                                 }
-
+*/
                                 /*12.Realizar una calculadora con las operaciones básicas suma, división,
                                         multiplicación y división. */
-
+/*
                                         let operacion= prompt("ingrese el nombre de la operacion que quiere realizar \n1.  suma \n 2. resta \n3. multuplicacion \n4. division")
 
                                         switch(operacion){
@@ -558,11 +558,11 @@ while(numero>=0){
 
                                         }
 
-
+*/
                                         /*14.Crea un programa que calcule el índice de masa corporal (IMC) de una
                                                 persona y muestre un mensaje indicando si la persona está bajo peso, peso
                                                 normal, sobrepeso u obesidad.*/
-
+/*
                                                 let peso= parseFloat(prompt("ingrese su peso en kilogramos"));
                                                 let altura= parseFloat(prompt("ingrese su altura en metros"));
                                                 let imc= peso/(altura*altura);
@@ -577,7 +577,7 @@ while(numero>=0){
                                                         document.write("ya estas gordo chamo pero ya tipo ballena <br>")
                                                 }
 
-
+*/
                                         /*16.Desarrolla un programa que solicite la nota final de la materia de algoritmos
                                         y generar el criterio de la nota, de acuerdo a la siguiente tabla. 
                                                 desempeño superior------------->4.5-5.0
@@ -586,7 +586,7 @@ while(numero>=0){
                                                 desempeño bajo ------------------> 1.0 - 3.3
                                         
                                         */
-                                        
+  /*                                      
                                             let nota_final = parseFloat(prompt("ingrese su nota final"));
                                             
                                             if(nota_final>=1.0 && nota_final<=3.3){
@@ -604,22 +604,22 @@ while(numero>=0){
                                                 document.write("nota final fuera de los parametros establecidos <br>");
                                             }
 
-
+*/
                                         /*18.Escribe un programa que imprima "Es un número menor que 10" si el número
                                         ingresado es menor que 10, "Es un número entre 10 y 20" si el número
                                         ingresado está entre 10 y 20, y "Es un número mayor que 20" si el número
                                         ingresado es mayor que 20. */
-
+/*
                                         let valor = parseInt(prompt("ingrese un numero"));
 
                                         document.write(valor<=10 ? "es un numero menor que 10" :
                                                  valor>=10&&valor<=20? "es un numero entre 10 y 20": "es un numero mayor que 20");
-
+*/
 
                                         /* 20.Escribe un programa que solicite al usuario su género y su edad. Si el usuario
                                         es de género masculino y tiene más de 18 años, muestra un mensaje que
                                         indique que es elegible para el servicio militar; en caso contrario, muestra un
-                                        mensaje que diga que no es elegible.*/
+                                        mensaje que diga que no es elegible.
 
                                         let genero = prompt("ingrese con el genero que se identifica");
                                         let edad_ser = prompt("ingrese su edad"); 
@@ -631,9 +631,114 @@ while(numero>=0){
                                         }
 
 
-                                        
+                                */
 
+                
+                                // FUNCIONES 
+
+                                /*Una función es un bloque de código que realiza una tarea específica cuando se llama. 
+                                Puedes pensar en una función como en un microondas: le das algo para cocinar, 
+                                le pasas algunos parámetros (como el tiempo y la potencia) y luego hace su trabajo y
+                                 te devuelve el resultado. */
+
+                                //TIPOS DE FUNCIONES
+                        
+                                // 1. Funciones Declaradas
+                                /*Son funciones tradicionales que puedes definir con function.
+                                 Se pueden llamar antes de ser declaradas debido al hoisting */
                                        
+
+                                 //EJEMPLO
+
+                                console.log("ejemplo de funcion declarada");
+                                 function saludar() {
+                                        console.log("¡Hola!");
+                                    }
+                                    
+                                    saludar(); // Llamada a la función
+
+                                //2. Funciones Expresadas
+                                /*Son funciones que se declaran en una variable, 
+                                asi que deben declararce antes de utilizarce  */
+
+                                //EJEMPLO
+
+                                console.log("ejemplo funcion expresada");
+
+                                const despidete=function(){
+                                        console.log("adios manito :c")
+                                }
+                                despidete();
+
+                                //3. Funciones Flecha
+                                /*Son una forma más corta de escribir funciones. Se usan mucho en código moderno */
+
+                                //EJEMPLO
+
+                                console.log("ejemplo funcion flecha");
+
+                                const nombre = (nombre) => console.log("hola " + nombre);
+                                nombre("santiago")
+
+                                //4. Funciones Anónimas
+
+                                /*Son funciones sin nombre. Se usan en callbacks o como argumentos de otras funciones. */
+
+                                //EJEMPLO
+
+                                console.log("ejemplo funcion anonima");
+
+                                const saludar2 = function(){
+                                        console.log("hola de nuevo");
+                                }
+                                saludar2();
+
+                                //  5. Funciones Autoejecutables
+
+                                /*Son funciones que se ejecutan inmediatamente después de ser declaradas.
+                                 Se usan para evitar contaminar el ámbito global. */
+
+                                 //EJEMPLO
+
+                                 console.log("ejemplo funcion autoejecutable");
+
+                                 (function(){
+                                        console.log("me autoejecute");
+                                 });
+                               
+                                 //  6. Funciones con Parámetros Predeterminados
+
+                                 /*Puedes definir valores por defecto para los parámetros. */
+
+                                 //EJEMPLO
+
+                                 console.log("ejemplo funcion con parametros");
+
+                                 function saludar(nombre = "Invitado") { //<- se le asigna un valor por defecto al parametro,
+                                                                        //  y le lega el parametro antes mecionado
+                                        console.log("Hola, " + nombre);
+                                    }
+                                    
+                                    saludar();        
+                                    saludar("Juan");  //<- se le pasa un argumento a la funcion
+
+                                //7. Funciones Recursivas
+                                /*Son funciones que se llaman a sí mismas. Se usan en problemas como
+                                factoriales y recursión de estructuras. */
+
+                                //EJEMPLO
+
+                                console.log("ejemplo funcion recursiva");
+
+                                function factorial(n) { //<- se declara la funcion y llega el parametro 5
+                                        if (n === 0) return 1;
+                                        return n * factorial(n - 1);
+                                    }
+                                    
+                                    console.log(factorial(5)); //<-se llama la funcion y se envia el argumento 5
+
+
+
 
                                         
                                         
