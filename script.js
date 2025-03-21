@@ -703,8 +703,8 @@ while(numero>=0){
                                  console.log("ejemplo funcion autoejecutable");
 
                                  (function(){
-                                        console.log("me autoejecute");
-                                 });
+                                       return console.log("me autoejecute");
+                                 })();
                                
                                  //  6. Funciones con Parámetros Predeterminados
 
@@ -737,17 +737,150 @@ while(numero>=0){
                                     
                                     console.log(factorial(5)); //<-se llama la funcion y se envia el argumento 5
 
+                                // 8. Funciones de Alto Orden
+                                /*Son funciones que reciben otra función como argumento o devuelven una función. */
+
+                                console.log("ejemplo de funcion de orden superior");
+
+                                let numeros2 = [1, 2, 3, 4];
+
+                                let cuadrados = numeros2.map(num => num * num);
+
+                                console.log(cuadrados); 
+
+                               
+
+                                 // ==============================
+                                // 📌 Arreglos en JavaScript
+                                // ==============================
+                                // Los arreglos son estructuras de datos que permiten almacenar múltiples valores en una sola variable.
+                                // Son ampliamente utilizados para manejar listas de datos de manera eficiente.
+
+                                // Creación de un arreglo
+                                let numeros = [1, 2, 3, 4, 5]; // 'let' declara una variable modificable y '[]' define un arreglo
+
+                                // Acceso a elementos del arreglo
+                                console.log(numeros[0]); // 'console.log' imprime en la consola el primer elemento (posición 0)
+
+                                // Métodos útiles en arreglos
+                                numeros.push(6); // 'push' agrega un elemento al final del arreglo
+                                numeros.pop(); // 'pop' elimina el último elemento del arreglo
+                                numeros.shift(); // 'shift' elimina el primer elemento del arreglo
+                                numeros.unshift(0); // 'unshift' agrega un elemento al inicio del arreglo
+
+                                // Eliminar un elemento en una posición específica
+                                let indice = numeros.indexOf(3); // 'indexOf' obtiene la posición del elemento '3'
+                                if (indice !== -1) { /*indexOf(3) busca el índice del número 3 en el arreglo.
+                                        Si el número no está en el arreglo, indexOf devuelve -1.
+                                        Si tratamos de eliminar un índice inexistente con splice, no pasará nada,
+                                        pero es una buena práctica verificarlo para evitar errores en otros casos. */
+                                numeros.splice(indice, 1); // 'splice' elimina un elemento en la posición dada
+                                }
+
+                                // Recorrer un arreglo con forEach
+                                numeros.forEach((num) => console.log(num)); // 'forEach' ejecuta una función para cada elemento
+
+                                // ==============================
+                                // 📌 Programación Orientada a Objetos (POO)
+                                // ==============================
+                                // La POO es un paradigma de programación basado en "objetos" que contienen datos y métodos.
+                                // Se utiliza para estructurar código de manera modular y reutilizable.
+
+                                // Definición de una clase
+                                class Persona {
+                                constructor(nombre, edad) { // 'constructor' define el método que inicializa una instancia
+                                        this.nombre = nombre; // 'this' hace referencia a la instancia actual
+                                        this.edad = edad;
+                                }
+
+                                saludar() { // Método de la clase
+                                        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`); // Template literals con `${}`
+                                }
+                                }
+
+                                // Crear instancias de la clase
+                                const persona1 = new Persona("Juan", 30); // 'const' define una variable constante
+                                persona1.saludar(); // Llamamos al método 'saludar' de la instancia creada
+
+                                // ==============================
+                                // 📌 Manejo de eventos y el DOM
+                                // ==============================
+                                // El DOM (Document Object Model) representa la estructura de un documento HTML y permite manipularlo con JavaScript.
+                                // Se utiliza para actualizar contenido y manejar interacciones del usuario.
+
+                                // Selección de un elemento del DOM y agregar un evento
+                                document.getElementById("miBoton").addEventListener("click", function() { 
+                                // 'getElementById' selecciona un elemento por su ID
+                                // 'addEventListener' agrega un evento al elemento
+                                alert("¡Botón clickeado!"); // 'alert' muestra un mensaje emergente en pantalla
+                                });
+
+                                // Modificar contenido de un elemento HTML
+                                document.getElementById("miTexto").textContent = "Nuevo texto"; // 'textContent' cambia el texto interno de un elemento
+
+                                // ==============================
+                                // 📌 Módulos en JavaScript
+                                // ==============================
+                                // Los módulos permiten dividir el código en archivos separados y reutilizarlos.
+                                // Se utilizan para organizar mejor el código y evitar conflictos entre variables.
+
+                                /* se necesita un servidor par apoder realizar este cuadro de codigo
+                                
+                                // Archivo: saludo.js (Módulo que exporta una función)
+                                export function saludar(nombre) { // 'export' permite que la función pueda ser usada en otros archivos
+                                return `Hola, ${nombre}!`; // 'return' devuelve un valor desde la función
+                                }
+
+                                // Archivo: main.js (Importar y usar el módulo)
+                                import { saludar } from "./saludo.js"; // 'import' trae un módulo desde otro archivo
+                                console.log(saludar("Carlos")); // Llamamos a la función importada y la mostramos en consola
+                                */
+
+                                // ==============================
+                                // 📌 Programación Asíncrona en JavaScript
+                                // ==============================
+                                // La programación asíncrona permite ejecutar código sin bloquear la ejecución del programa.
+                                // Es esencial para manejar operaciones como llamadas a servidores o lectura de archivos.
+
+                                // Función con setTimeout (ejecución retardada)
+                                setTimeout(() => { 
+                                // 'setTimeout' ejecuta código después de un tiempo especificado
+                                console.log("Este mensaje aparece después de 2 segundos"); 
+                                }, 2000); // 2000 milisegundos = 2 segundos
+
+                                // Promesas en JavaScript
+                                function obtenerDatos() {
+                                return new Promise((resolve, reject) => { // 'Promise' representa una operación asíncrona
+                                        setTimeout(() => {
+                                        resolve("Datos obtenidos"); // 'resolve' finaliza exitosamente la promesa
+                                        }, 3000);
+                                });
+                                }
+
+                                // Manejo de promesas con 'then'
+                                obtenerDatos().then((datos) => console.log(datos)); // 'then' ejecuta código cuando la promesa se resuelve
+
+                                // Uso de async/await para manejar promesas de forma más legible
+                                async function cargarDatos() { // 'async' convierte la función en asíncrona
+                                let datos = await obtenerDatos(); // 'await' espera la resolución de la promesa antes de continuar
+                                console.log(datos);
+                                }
+
+                                cargarDatos();
 
 
 
-                                        
-                                        
+
+
+
+                                                                        
+                                                                        
 
 
 
 
-                                      
-                                        
+                                                                
+                                                                        
 
 
 
